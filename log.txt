@@ -1,3 +1,5 @@
-12-16-2021 10:10...10:15pm
-
+00 | 12-16-2021 10:10...10:15pm
 pserb: create repo, setup README, init all required files
+
+01 | 12-17-2021 1:05...1:10pm
+jothman: added plan
