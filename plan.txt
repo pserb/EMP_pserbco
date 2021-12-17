@@ -1,0 +1,10 @@
+Step 1: Create large array (of size 10000).
+Step 2: Fill in array using for loop, setting each value to its own index.
+Step 3: Use two long variables to time (start & end). Right before starting search
+(in main method), we set long variable start to current time since epoch, then right
+after finishing (also in main method), we set end variable to current time since
+epoch.
+Step 4: Take the difference of end and start times, then compare results of
+search times for LinSearch and BinSearch.
+Step 5: Create driver class that runs this experiment many times at different array
+lengths, different (randomized) test cases.
