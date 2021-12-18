@@ -5,9 +5,11 @@ import java.util.ArrayList;
  * tests BinSearch and LinSearch with
  * arrays of length 1 billion
  * searching for random indexes within that array
- * 100x per search type
- * stores program run length for each in respective long array
- * prints average run length at end
+ * 1000x per search type
+ * stores search run length for each in respective long array
+ * prints time to create and fill array
+ * prints average search run length
+ * prints total program run length
  */
 
 public class SearchDriver {
