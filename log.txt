@@ -3,3 +3,17 @@ pserb: create repo, setup README, init all required files
 
 01 | 12-17-2021 1:05...1:10pm
 jothman: added plan
+
+02 | 12-18-2021 11:50am...1:00pm
+pserb: 
+    * Created IntBinSearch.java and IntLinSearch.java, nearly identical classes as BinSearch and LinSearch,
+    augmented to use int arrays searching for int targets.
+    * Filled out SearchDriver.java, using new classes, running 1,000 trials searching for random
+    values on 1 billion length int arrays, logging times in respective ArrayLists for both binary and linear search.
+    The random values are shared among the two: if 12 randomly picked, both search for 12, logging times in ArrayList
+    * Created static method sum(ArrayList<Long>) in SearchDriver to calculate the sum of search times
+    * Main method prints:
+        - Length to create and populate array (milliseconds)
+        - BinSearch total and average time (milliseconds)
+        - LinSearch total and average time (milliseconds)
+        - Program total time (milliseconds and seconds)
