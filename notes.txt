@@ -1,0 +1,9 @@
+BinSearch and LinSearch use Comparable types as inputs.
+However, when trying to create and fill in a Comparable array of 1 billion, Java runs out of memory.
+        Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+                at java.base/java.lang.Integer.valueOf(Integer.java:1059)
+                at SearchDriver.main(SearchDriver.java:32)
+However, ints are much less memory intensive - you can make and populate a 1 billion length int array in
+around 1.2 seconds.
+Therefore, we can augment BinSearch.java and LinSearch.java to take int types as inputs, altering the code
+slightly to work with ints, allowing us to run these search methods on arrays that are much much larger.
