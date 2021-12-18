@@ -17,3 +17,13 @@ pserb:
         - BinSearch total and average time (milliseconds)
         - LinSearch total and average time (milliseconds)
         - Program total time (milliseconds and seconds)
+
+
+
+03 | 12-18-2021 2:00PM ... 3:00PM
+andrew: 
+    * Went through pserbs code and added comments to understand better what each method, timer, and line did. 
+    * Ran it a few times to test out a few ArrayList sizes just to see how long it takes. Took pretty long...
+    * Renamed IntBinSearch/IntLinSearch to BinSearch/LinSearch and deleted original BinSearch/LinSearch to make it easier;
+        - for BinSearch decided to go with the iterative approach beacuse uses less memory and was the default one before
+    
