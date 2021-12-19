@@ -14,9 +14,9 @@ import java.util.ArrayList;
 
 public class SearchDriver {
     // var stores len of array
-    public static final int LEN = 1_000_00;
+    public static final int LEN = 3_000_000_00;
     // number of random indexes searched
-    public static final int REPEAT = 1_00;
+    public static final int REPEAT = 1_000;
 
     public static long sum(ArrayList<Long> a) {
         long s = 0;
@@ -27,6 +27,13 @@ public class SearchDriver {
     }
 
     public static void main(String[] args) {
+
+        System.out.println("=======================================\n\nTEST:");
+        System.out.println("\nArray Length:" + LEN);
+        System.out.println("\nNumber of times repeated:" + REPEAT);
+        System.out.println("\n===========================================\n");
+
+
         
         // for timing the time it took to run main method
         long programStart = System.currentTimeMillis();
@@ -35,9 +42,9 @@ public class SearchDriver {
         long arrstart = System.currentTimeMillis();
 
         // create and fillin array
-        int[] bigArr = new int[LEN];
+        Comparable[] bigArr = new Comparable[LEN];
         for (int i = 0; i < bigArr.length; i++) {
-            bigArr[i] = i;
+            bigArr[i] = (Comparable) i;
         }
 
         // for timing how long it took to fill and create bigArr
@@ -82,5 +89,7 @@ public class SearchDriver {
         long programEnd = System.currentTimeMillis();
 
         System.out.println("\nTotal program length: " + (programEnd-programStart) + " milliseconds, " + ((programEnd-programStart)/1000.0) + " seconds");
+
+        System.out.println("\n=================================\n");
     }
 }
