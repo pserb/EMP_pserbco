@@ -14,9 +14,9 @@ import java.util.ArrayList;
 
 public class SearchDriver {
     // var stores len of array
-    public static final int LEN = 1_000_00;
+    public static final int LEN = 100_000_000;
     // number of random indexes searched
-    public static final int REPEAT = 1_00;
+    public static final int REPEAT = 100;
 
     public static long sum(ArrayList<Long> a) {
         long s = 0;
@@ -55,7 +55,7 @@ public class SearchDriver {
 
             // timing how long it takes binary search to find index
             long start = System.currentTimeMillis();
-            BinSearch.binSearch(bigArr, index);
+            IntBinSearch.binSearch(bigArr, index);
             long end = System.currentTimeMillis();
 
             // adding how long binsearch took to binSearchTimes (to get average at the end)
@@ -63,7 +63,7 @@ public class SearchDriver {
 
             // timing how long it takes linear search to find index
             start = System.currentTimeMillis();
-            LinSearch.linSearch(bigArr, index);
+            IntLinSearch.linSearch(bigArr, index);
             end = System.currentTimeMillis();
 
             // adding how long lin search took to linSearchTimes (to get average at the end)
