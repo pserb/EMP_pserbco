@@ -3,7 +3,7 @@
    Binary search on array of ints
 **/
 
-public class BinSearch
+public class IntBinSearch
 {
 
   /**

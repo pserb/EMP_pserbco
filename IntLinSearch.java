@@ -2,7 +2,7 @@
    class IntLinSearch
 **/
 
-public class LinSearch
+public class IntLinSearch
 {
 
   /**
