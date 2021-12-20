@@ -14,9 +14,9 @@ import java.util.ArrayList;
 
 public class SearchDriver {
     // var stores len of array
-    public static final int LEN = 100_000_000;
+    public static final int LEN = 1_000_000_000;
     // number of random indexes searched
-    public static final int REPEAT = 100;
+    public static final int REPEAT = 1_000;
 
     public static long sum(ArrayList<Long> a) {
         long s = 0;
