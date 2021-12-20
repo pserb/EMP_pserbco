@@ -23,8 +23,8 @@ APCS L03: Get Empirical
     - Average Linear Search: 0.31ms
     - Time to fill Array: 19ms
   * Array length of 10,000,000:
-    - Average Binary Search: 3.659ms
-    - Average Linear Search: 0.31ms
+    - Average Binary Search: 0.008ms
+    - Average Linear Search: 3.659ms
     - Time to fill Array: 227ms
   * Array length of 100,000,000:
     - Average Binary Search: 0.011ms
