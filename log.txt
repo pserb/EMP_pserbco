@@ -52,3 +52,7 @@ andrew:
     * Added code to SearchDriver.java to test worst case scenario
     * Added more to the results (worst case scenario)
     * Placed all int test code into a separate folder
+
+08 | 12-20-2021 11:10PM...11:35PM
+pserb:
+    * Tableified results in README (for better readability), added Conclusion bullet point
