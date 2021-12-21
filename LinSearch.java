@@ -1,3 +1,9 @@
+// PSerb & Co. Paul Serbanescu, Andrew Piatetsky, Joseph Othman
+// APCS pd7
+// L03 - Get Empirical
+// 2021-12-21
+// time spent: 0.1 hrs
+
 /**
    class LinSearch
 **/
