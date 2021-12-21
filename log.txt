@@ -39,8 +39,9 @@ andrew:
 pserb: filled out results section on README with results from searches on int arrays (note: not sure if we are allowed to use int arrays, or should stick with Comparables)
 
 
-05 | 12-20-2021 7:30PM...7:50PM
+06 | 12-20-2021 7:30PM...8:30PM
 joseph:
     * Tested SearchDriver.java with linear and binary search tests to confirm accuracy of data and hypothesis on different machine.
 	(Did not change average data to skew findings).
     * added notes with more discoveries about our data and conclusions.
+    * added Tests Performed (finalized plan that was carried out) and Conclusions to Readme file.
