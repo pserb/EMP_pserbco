@@ -21,6 +21,7 @@ APCS L03: Get Empirical
 ## Results
 
 #### Using array of Comparables (Comparables[]) repeating and timing each test 1,000 times
+  ##### Testing random index's existing in the array of Comparables
   * Array length of 1,000:
     - Average Binary Search: 0.004ms
     - Average Linear Search: 0.004ms
@@ -51,7 +52,7 @@ APCS L03: Get Empirical
     - Time to fill Array: 3776ms
 
 
-#### Using array of Comparables (Comparables[]) repeating and timing each test 1,000 times\
+#### Using array of Comparables (Comparables[]) repeating and timing each test 1,000 times
   ##### Worst case scenario (searching for last item in the array)
   * Array length of 1,000:
     - Average Binary Search: 0.003ms
