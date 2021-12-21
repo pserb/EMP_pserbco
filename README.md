@@ -3,6 +3,21 @@ APCS L03: Get Empirical
 ## pserbco
 #### Paul Serbanescu, Joseph Othman, Andrew Piatetsky
 
+## Tests Performed
+  * Our final plan ended up being:
+    - Create an array of length 1000, with each element being an integer with the value of its index in the array.
+    - Search for a random element in this array using linear search, timing how long linear search takes by using currentTimeMillis().
+    - Search for the same random element in the same array using binary search.
+    - Perform each search 1000 times, each time with a randomly generated element (with possible overlap, albeit unlikely as the array size increases).
+    - Take the average of all of the linear search test times, and take the average of all of the binary search test times.
+    - Do the same test, except for an array of lengths: 
+      - 10,000 
+      - 100,000 
+      - 1,000,000
+      - 10,000,000
+      - 100,000,000
+      - 200,000,000
+
 ## Results
 
 #### Using array of Comparables (Comparables[]) repeating and timing each test 1,000 times
