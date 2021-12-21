@@ -50,7 +50,40 @@ APCS L03: Get Empirical
     - Average Linear Search: 61.156ms
     - Time to fill Array: 3776ms
 
+
+#### Using array of Comparables (Comparables[]) repeating and timing each test 1,000 times\
+  ##### Worst case scenario (searching for last item in the array)
+  * Array length of 1,000:
+    - Average Binary Search: 0.003ms
+    - Average Linear Search: 0.015ms
+    - Time to fill Array: 0ms
+  * Array length of 10,000:
+    - Average Binary Search: 0.003ms
+    - Average Linear Search: 0.022ms
+    - Time to fill Array: 1ms
+  * Array length of 100,000:
+    - Average Binary Search: 0.003ms
+    - Average Linear Search: 0.069ms
+    - Time to fill Array: 5ms
+  * Array length of 1,000,000:
+    - Average Binary Search: 0.005ms
+    - Average Linear Search: 0.606ms
+    - Time to fill Array: 20ms
+  * Array length of 10,000,000:
+    - Average Binary Search: 0.005ms
+    - Average Linear Search: 6.749ms
+    - Time to fill Array: 228ms
+  * Array length of 100,000,000:
+    - Average Binary Search: 0.011ms
+    - Average Linear Search: 62.326ms
+    - Time to fill Array: 2069ms
+  * Array length of 200,000,000:
+    - Average Binary Search: 0.005ms
+    - Average Linear Search: 121.928ms
+    - Time to fill Array: 3752ms
+
 #### Using array of ints repeating and timing each test 1,000 times
+  ##### Not sure if we are allowed to this, but we ran these tests 
   * Array Length of 1,000:
     - Binary: 0.002ms
     - Linear: 0.003ms

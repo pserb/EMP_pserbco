@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class SearchDriver {
     // var stores len of array
-    public static final int LEN = 1_000_000_000;
+    public static final int LEN = 10_000_000;
     // number of random indexes searched
     public static final int REPEAT = 1_000;
 
@@ -27,6 +27,13 @@ public class SearchDriver {
     }
 
     public static void main(String[] args) {
+
+        System.out.println("=======================================\n\nTEST:");
+        System.out.println("\nArray Length:" + LEN);
+        System.out.println("\nNumber of times repeated:" + REPEAT);
+        System.out.println("\n===========================================\n");
+
+
         
         // for timing the time it took to run main method
         long programStart = System.currentTimeMillis();
@@ -35,9 +42,9 @@ public class SearchDriver {
         long arrstart = System.currentTimeMillis();
 
         // create and fillin array
-        int[] bigArr = new int[LEN];
+        Comparable[] bigArr = new Comparable[LEN];
         for (int i = 0; i < bigArr.length; i++) {
-            bigArr[i] = i;
+            bigArr[i] = (Comparable) i;
         }
 
         // for timing how long it took to fill and create bigArr
@@ -51,11 +58,11 @@ public class SearchDriver {
         // looping REPEAT times to get a large selection of random numbers generated 
         for (int i = 0; i < REPEAT; i++) {
             // getting random index to search for
-            int index = (int) (Math.random() * LEN);
+            int index = LEN-1;
 
             // timing how long it takes binary search to find index
             long start = System.currentTimeMillis();
-            IntBinSearch.binSearch(bigArr, index);
+            BinSearch.binSearch(bigArr, index);
             long end = System.currentTimeMillis();
 
             // adding how long binsearch took to binSearchTimes (to get average at the end)
@@ -63,7 +70,7 @@ public class SearchDriver {
 
             // timing how long it takes linear search to find index
             start = System.currentTimeMillis();
-            IntLinSearch.linSearch(bigArr, index);
+            LinSearch.linSearch(bigArr, index);
             end = System.currentTimeMillis();
 
             // adding how long lin search took to linSearchTimes (to get average at the end)
@@ -82,5 +89,7 @@ public class SearchDriver {
         long programEnd = System.currentTimeMillis();
 
         System.out.println("\nTotal program length: " + (programEnd-programStart) + " milliseconds, " + ((programEnd-programStart)/1000.0) + " seconds");
+
+        System.out.println("\n=================================\n");
     }
 }

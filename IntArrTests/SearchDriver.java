@@ -42,9 +42,9 @@ public class SearchDriver {
         long arrstart = System.currentTimeMillis();
 
         // create and fillin array
-        Comparable[] bigArr = new Comparable[LEN];
+        int[] bigArr = new int[LEN];
         for (int i = 0; i < bigArr.length; i++) {
-            bigArr[i] = (Comparable) i;
+            bigArr[i] = i;
         }
 
         // for timing how long it took to fill and create bigArr
@@ -58,11 +58,11 @@ public class SearchDriver {
         // looping REPEAT times to get a large selection of random numbers generated 
         for (int i = 0; i < REPEAT; i++) {
             // getting random index to search for
-            int index = (int) (Math.random() * LEN);
+            int index = LEN-1;
 
             // timing how long it takes binary search to find index
             long start = System.currentTimeMillis();
-            BinSearch.binSearch(bigArr, index);
+            IntBinSearch.binSearch(bigArr, index);
             long end = System.currentTimeMillis();
 
             // adding how long binsearch took to binSearchTimes (to get average at the end)
@@ -70,7 +70,7 @@ public class SearchDriver {
 
             // timing how long it takes linear search to find index
             start = System.currentTimeMillis();
-            LinSearch.linSearch(bigArr, index);
+            IntLinSearch.linSearch(bigArr, index);
             end = System.currentTimeMillis();
 
             // adding how long lin search took to linSearchTimes (to get average at the end)
