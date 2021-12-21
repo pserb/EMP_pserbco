@@ -1,3 +1,9 @@
+// PSerb & Co. Paul Serbanescu, Andrew Piatetsky, Joseph Othman
+// APCS pd7
+// L03 - Get Empirical
+// 2021-12-21
+// time spent: 3.2 hrs
+
 import java.util.ArrayList;
 
 /**
@@ -13,9 +19,9 @@ import java.util.ArrayList;
  */
 
 public class SearchDriver {
-    // var stores len of array
+    // var stores len of array (the independent variable)
     public static final int LEN = 10_000_000;
-    // number of random indexes searched
+    // number of random indexes searched (higher values results in higher accuracy of tests; 1,000 is a good middle ground)
     public static final int REPEAT = 1_000;
 
     public static long sum(ArrayList<Long> a) {
@@ -57,8 +63,9 @@ public class SearchDriver {
 
         // looping REPEAT times to get a large selection of random numbers generated 
         for (int i = 0; i < REPEAT; i++) {
-            // getting random index to search for
-            int index = LEN-1;
+            // setting index to search for (uncomment only one at a time)
+                int index = LEN-1; // WORST CASE
+                // int index = (int) (Math.random() * LEN); // RANDOM INDEX
 
             // timing how long it takes binary search to find index
             long start = System.currentTimeMillis();
