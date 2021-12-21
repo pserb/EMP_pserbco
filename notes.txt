@@ -7,3 +7,12 @@ However, ints are much less memory intensive - you can make and populate a 1 bil
 around 1.2 seconds.
 Therefore, we can augment BinSearch.java and LinSearch.java to take int types as inputs, altering the code
 slightly to work with ints, allowing us to run these search methods on arrays that are much much larger.
+
+Generally, as the size of the array increased, the time at in which it took Linear Search
+to find a randomized element in the array increased linearly, while the time it took for
+Binary Search to find (the same) randomized element increased at a much slower rate.
+
+When the array length was sufficiently small (in our tests, 1000 elements long), both of these tests
+searched for the array almost instantly. However, as we augmented n, the time that binary search took
+to search for an element remained incredibly small, whereas the linear search method took longer and
+longer, and began taking much longer than Binary Search as the size of the array increased.
