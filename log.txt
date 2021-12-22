@@ -45,3 +45,14 @@ joseph:
 	(Did not change average data to skew findings).
     * added notes with more discoveries about our data and conclusions.
     * added Tests Performed (finalized plan that was carried out) and Conclusions to Readme file.
+
+
+07 | 12-20-2021 9:20 ... 10:00
+andrew:
+    * Added code to SearchDriver.java to test worst case scenario
+    * Added more to the results (worst case scenario)
+    * Placed all int test code into a separate folder
+
+08 | 12-20-2021 11:10PM...11:35PM
+pserb:
+    * Tableified results in README (for better readability), added Conclusion bullet point
