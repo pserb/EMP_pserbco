@@ -56,3 +56,8 @@ andrew:
 08 | 12-20-2021 11:10PM...11:35PM
 pserb:
     * Tableified results in README (for better readability), added Conclusion bullet point
+
+09 | 12-20-2021 7:30PM...8:00PM
+joseph:
+    * Transcribed notes from Gallery Tour as done in class.
+
