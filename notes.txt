@@ -16,3 +16,22 @@ When the array length was sufficiently small (in our tests, 1000 elements long),
 searched for the array almost instantly. However, as we augmented n, the time that binary search took
 to search for an element remained incredibly small, whereas the linear search method took longer and
 longer, and began taking much longer than Binary Search as the size of the array increased.
+
+
+GALLERY TOUR
+
+- Varying amounts of tests run (some teams ran tests 100 times, others 1000 times, and others 10000; to
+our knowledge, no one exceeded this). Interestingly, amount of tests run did not depend on the size of
+the array itself.
+- Target: some teams chose to look at the exact worst-case scenario target (which they generally interpretted 
+as one of two things: the element is not present in the array, or the element is positioned in the last
+index of the array), while other teams searched for randomly generated elements in the array.
+- Some teams displayed the total amount of time among all test trials run for each search method, while
+others displayed the average test time. One team notably displayed the ratio of the average test times
+of linear and binary search, instead of the actual times themselves.
+- A notable number of teams did not use for loops to conduct tests when varying the array size, and instead
+changed the size manually.
+- There was overall a great variance in collected data (actual times, but also the maximal sized array
+that could be tested) due to variance in the computers.
+- One team found that binary search times even started decreasing as a result of increased array size;
+most teams found that linear search times increased proportionally to the size of the array.
